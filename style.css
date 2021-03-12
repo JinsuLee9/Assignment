@@ -1,19 +1,56 @@
+.container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.container::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url("tile.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+.box {
+  width: 300px;
+  height: 300px; 
+  border-radius: 70%;
+  overflow: hidden;
+}
+.box2 {
+  width: 300px;
+  height: 300px; 
+  border-radius: 30%;
+  overflow: hidden;
+}
+.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 body{
   margin:0;
+  font-family: 'Times New Roman', Times, serif;
 }
 a {
   color:Black;
   text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
 }
- h1{
+h1{
   font-size: 45px;
   text-align: center;
-  border-bottom:1px solid gray;
+  border-bottom:3px solid rgb(96, 100, 33);
   margin:0;
   padding:20px;
 }
 ol{
-  border-right:1px solid gray;
+  border-right:3px solid rgb(96, 100, 33);
   width:150px;
   margin:0;
   padding:20px;
@@ -41,4 +78,4 @@ img{
     h1{
       border-bottom:none;
       }
-}
+     }
